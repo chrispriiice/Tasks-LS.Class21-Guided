@@ -22,7 +22,33 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cGY-yp-npj" id="DD5-yA-cuU">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tL-bE-dfO">
+                                            <rect key="frame" x="20" y="11" width="20" height="22"/>
+                                            <state key="normal" image="circle" catalog="system"/>
+                                            <connections>
+                                                <action selector="toggleComplete:" destination="cGY-yp-npj" eventType="touchUpInside" id="9ok-Wf-2xC"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBY-SB-y8F">
+                                            <rect key="frame" x="48" y="11.5" width="346" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="sBY-SB-y8F" firstAttribute="leading" secondItem="3tL-bE-dfO" secondAttribute="trailing" constant="8" id="6zF-KI-xxU"/>
+                                        <constraint firstAttribute="trailing" secondItem="sBY-SB-y8F" secondAttribute="trailing" constant="20" id="8lg-pv-R1Z"/>
+                                        <constraint firstItem="3tL-bE-dfO" firstAttribute="centerY" secondItem="DD5-yA-cuU" secondAttribute="centerY" id="THF-nZ-5en"/>
+                                        <constraint firstItem="sBY-SB-y8F" firstAttribute="centerY" secondItem="DD5-yA-cuU" secondAttribute="centerY" id="dEq-H4-Mn3"/>
+                                        <constraint firstItem="3tL-bE-dfO" firstAttribute="leading" secondItem="DD5-yA-cuU" secondAttribute="leading" constant="20" id="nQX-XN-M7D"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="completedButton" destination="3tL-bE-dfO" id="VtT-GQ-vri"/>
+                                    <outlet property="taskNameLabel" destination="sBY-SB-y8F" id="xDx-Zg-qAA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -40,7 +66,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EmJ-rz-z1k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-964" y="767"/>
+            <point key="canvasLocation" x="-965.21739130434787" y="766.74107142857144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8tb-st-jzN">
