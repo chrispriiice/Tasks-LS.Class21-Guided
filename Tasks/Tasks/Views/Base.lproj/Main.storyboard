@@ -116,6 +116,9 @@
                                                     <constraint firstAttribute="width" constant="30" id="wJg-ov-Msc"/>
                                                 </constraints>
                                                 <state key="normal" image="circle" catalog="system"/>
+                                                <connections>
+                                                    <action selector="toggleComplete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZC-Uh-pu2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -157,9 +160,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create Task" id="qv1-Vy-Kdk">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="aUq-ju-lPp"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="G51-De-DQT"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="aUq-ju-lPp">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="lcj-bd-UWI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="G51-De-DQT">
+                            <connections>
+                                <action selector="save:" destination="BYZ-38-t0r" id="N3r-v1-PQ4"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="kNB-OM-6TW" id="E59-2c-not"/>
+                        <outlet property="notesTextView" destination="R04-F0-saK" id="2cq-HV-kqz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

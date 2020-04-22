@@ -11,7 +11,7 @@ import CoreData
 
 // We need a way to initialize a Task object given its properties
 extension Task {
-    convenience init(identifier: UUID = UUID(),
+    @discardableResult convenience init(identifier: UUID = UUID(),
                      name: String,
                      notes: String?,
                      complete: Bool = false,
