@@ -24,6 +24,7 @@
 		1BC4E663244FDCAA00A68ED4 /* Tasks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tasks.xcdatamodel; sourceTree = "<group>"; };
 		1BC4E665244FE37400A68ED4 /* Task+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Convenience.swift"; sourceTree = "<group>"; };
 		1BC4E668244FE73700A68ED4 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		1BEB39312452838000E7B986 /* Tasks 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Tasks 2.xcdatamodel"; sourceTree = "<group>"; };
 		CEB451C4244E59CD00E5F9AD /* Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB451C7244E59CD00E5F9AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB451C9244E59CD00E5F9AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -393,9 +394,10 @@
 		1BC4E662244FDCAA00A68ED4 /* Tasks.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				1BEB39312452838000E7B986 /* Tasks 2.xcdatamodel */,
 				1BC4E663244FDCAA00A68ED4 /* Tasks.xcdatamodel */,
 			);
-			currentVersion = 1BC4E663244FDCAA00A68ED4 /* Tasks.xcdatamodel */;
+			currentVersion = 1BEB39312452838000E7B986 /* Tasks 2.xcdatamodel */;
 			path = Tasks.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
